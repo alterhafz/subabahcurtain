@@ -122,17 +122,12 @@ nav a:hover{
     height:340px;
     object-fit:cover;
     border-radius:20px;
-    transition:0.3s;
 }
 
-.gallery img:hover{
-    transform:scale(1.04);
-}
-
-/* INFO */
+/* INFORMATION */
 .categories{
     padding:80px 8%;
-    background:#fff;
+    background:white;
 }
 
 .cards{
@@ -154,10 +149,46 @@ nav a:hover{
     margin-bottom:15px;
 }
 
+/* FOUNDER SECTION */
+.founder{
+    padding:80px 8%;
+    background:#f8fafc;
+}
+
+.founder-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.founder-card{
+    display:flex;
+    gap:15px;
+    align-items:center;
+    background:white;
+    padding:18px;
+    border-radius:16px;
+    margin-bottom:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.founder-card i{
+    font-size:28px;
+    color:#b68d40;
+}
+
+.founder-text{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
 /* INSTALLATIONS */
 .installations{
     padding:80px 8%;
-    background:#f8fafc;
+    background:white;
 }
 
 .install-wrapper{
@@ -209,7 +240,7 @@ nav a:hover{
     background:#8f6d30;
 }
 
-/* WHATSAPP FLOATING BUTTON ONLY */
+/* WHATSAPP */
 .whatsapp{
     position:fixed;
     bottom:25px;
@@ -223,20 +254,29 @@ nav a:hover{
     display:flex;
     gap:10px;
     align-items:center;
-    box-shadow:0 5px 20px rgba(0,0,0,0.2);
     z-index:999;
 }
 
 /* MOBILE */
 @media(max-width:768px){
 
-.hero-content h2{
-    font-size:36px;
+header{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
 }
 
 nav{
     flex-wrap:wrap;
     justify-content:center;
+}
+
+.hero-content h2{
+    font-size:36px;
+}
+
+.founder-grid{
+    grid-template-columns:1fr;
 }
 
 }
@@ -252,7 +292,7 @@ nav{
 <nav>
 <a href="#showcase">Showcase</a>
 <a href="#info">Information</a>
-<a href="#about">About Us</a>
+<a href="#founder">Founder</a>
 <a href="#installations">Installations</a>
 </nav>
 </header>
@@ -264,6 +304,7 @@ nav{
 </div>
 </section>
 
+<!-- SHOWCASE -->
 <section class="showcase" id="showcase">
 <h2 class="section-title">Curtain Showcase</h2>
 
@@ -275,6 +316,7 @@ nav{
 </div>
 </section>
 
+<!-- INFORMATION (CONSULTATION RESTORED) -->
 <section class="categories" id="info">
 
 <h2 class="section-title">Information</h2>
@@ -284,7 +326,7 @@ nav{
 <div class="card">
 <i class="fa-solid fa-couch"></i>
 <h4>Services</h4>
-<p>Custom curtains & installation.</p>
+<p>Custom curtains, sewing & installation.</p>
 </div>
 
 <div class="card">
@@ -299,10 +341,53 @@ nav{
 <p>+60133344330<br>subabahcurtain@gmail.com</p>
 </div>
 
+<div class="card">
+<i class="fa-solid fa-ruler-combined"></i>
+<h4>Consultation</h4>
+<p>Free measurement, design advice & planning.</p>
+</div>
+
 </div>
 
 </section>
 
+<!-- FOUNDER + VISION -->
+<section class="founder" id="founder">
+
+<h2 class="section-title">Founder</h2>
+
+<div class="founder-grid">
+
+<div>
+<div class="founder-card">
+<i class="fa-solid fa-user"></i>
+<div>
+<h4>Founder 1</h4>
+<p>Put description here</p>
+</div>
+</div>
+
+<div class="founder-card">
+<i class="fa-solid fa-user"></i>
+<div>
+<h4>Founder 2</h4>
+<p>Put description here</p>
+</div>
+</div>
+</div>
+
+<div class="founder-text">
+<h3>Vision</h3>
+<p>
+Put your company vision, mission and long-term goals here.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- INSTALLATIONS -->
 <section class="installations" id="installations">
 
 <h2 class="section-title">Installations</h2>
@@ -341,7 +426,7 @@ nav{
 
 </section>
 
-<!-- ONLY FLOATING WHATSAPP BUTTON -->
+<!-- WHATSAPP ONLY -->
 <a class="whatsapp" href="https://wa.me/60133344330" target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
 WhatsApp
@@ -349,7 +434,6 @@ WhatsApp
 
 <script>
 let index = 0;
-
 function move(dir){
 const slider = document.getElementById('slider');
 const total = slider.children.length;
