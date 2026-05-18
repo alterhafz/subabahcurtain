@@ -28,7 +28,6 @@ h1,h2,h3{
 }
 
 /* HEADER */
-
 header{
     background:white;
     display:flex;
@@ -43,12 +42,11 @@ header{
 
 header h1{
     font-size:28px;
-    letter-spacing:1px;
 }
 
 nav{
     display:flex;
-    gap:20px;
+    gap:22px;
 }
 
 nav a{
@@ -62,7 +60,6 @@ nav a:hover{
 }
 
 /* HERO */
-
 .hero{
     height:90vh;
     background:url('https://i.postimg.cc/Hkv0Db5Q/IMG-20260517-WA0027.jpg') center/cover no-repeat;
@@ -85,21 +82,15 @@ nav a:hover{
     position:relative;
     z-index:2;
     color:white;
-    max-width:800px;
 }
 
 .hero-content h2{
     font-size:58px;
 }
 
-.hero-content p{
-    font-size:18px;
-    margin-top:10px;
-    margin-bottom:25px;
-}
-
 .hero-btn{
     display:inline-block;
+    margin-top:15px;
     padding:14px 30px;
     background:#b68d40;
     color:white;
@@ -108,34 +99,40 @@ nav a:hover{
     font-weight:600;
 }
 
-/* SECTION */
+/* SHOWCASE */
+.showcase{
+    padding:80px 8%;
+    background:white;
+}
 
 .section-title{
     text-align:center;
     font-size:42px;
-    margin-bottom:40px;
+    margin-bottom:50px;
 }
-
-/* GALLERY */
 
 .gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;
 }
 
 .gallery img{
     width:100%;
-    height:320px;
+    height:340px;
     object-fit:cover;
-    border-radius:18px;
+    border-radius:20px;
+    transition:0.3s;
 }
 
-/* CARDS */
+.gallery img:hover{
+    transform:scale(1.04);
+}
 
+/* INFO */
 .categories{
     padding:80px 8%;
-    background:white;
+    background:#fff;
 }
 
 .cards{
@@ -157,12 +154,7 @@ nav a:hover{
     margin-bottom:15px;
 }
 
-.card h4{
-    margin-bottom:10px;
-}
-
 /* INSTALLATIONS */
-
 .installations{
     padding:80px 8%;
     background:#f8fafc;
@@ -182,7 +174,6 @@ nav a:hover{
 
 .install-card{
     min-width:100%;
-    background:white;
 }
 
 .install-card img{
@@ -196,8 +187,7 @@ nav a:hover{
     text-align:center;
 }
 
-/* BEAUTIFUL BUTTONS */
-
+/* BUTTONS */
 .install-buttons{
     display:flex;
     justify-content:center;
@@ -213,65 +203,13 @@ nav a:hover{
     color:white;
     font-weight:600;
     cursor:pointer;
-    transition:0.3s;
 }
 
 .install-buttons button:hover{
     background:#8f6d30;
 }
 
-/* ABOUT */
-
-.about{
-    padding:80px 10%;
-    background:#fff;
-    text-align:center;
-}
-
-/* FOUNDER SECTION */
-
-.founder{
-    padding:80px 8%;
-    background:#f8fafc;
-}
-
-.founder-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:center;
-}
-
-.founder-cards{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
-.founder-card{
-    background:white;
-    padding:20px;
-    border-radius:18px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.founder-card i{
-    font-size:30px;
-    color:#b68d40;
-}
-
-.founder-text{
-    background:white;
-    padding:25px;
-    border-radius:18px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-/* WHATSAPP */
-
+/* WHATSAPP FLOATING BUTTON ONLY */
 .whatsapp{
     position:fixed;
     bottom:25px;
@@ -282,28 +220,23 @@ nav a:hover{
     border-radius:50px;
     text-decoration:none;
     font-weight:600;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+    z-index:999;
 }
 
 /* MOBILE */
-
 @media(max-width:768px){
-
-header{
-    flex-direction:column;
-    gap:15px;
-}
-
-nav{
-    flex-wrap:wrap;
-    justify-content:center;
-}
 
 .hero-content h2{
     font-size:36px;
 }
 
-.founder-grid{
-    grid-template-columns:1fr;
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 }
@@ -327,7 +260,6 @@ nav{
 <section class="hero">
 <div class="hero-content">
 <h2>Elegant Curtains For Modern Living</h2>
-<p>Luxury curtain design for homes & offices</p>
 <a href="#showcase" class="hero-btn">View Collection</a>
 </div>
 </section>
@@ -352,7 +284,7 @@ nav{
 <div class="card">
 <i class="fa-solid fa-couch"></i>
 <h4>Services</h4>
-<p>Custom curtains, sewing & installation.</p>
+<p>Custom curtains & installation.</p>
 </div>
 
 <div class="card">
@@ -365,50 +297,6 @@ nav{
 <i class="fa-solid fa-phone"></i>
 <h4>Contact Us</h4>
 <p>+60133344330<br>subabahcurtain@gmail.com</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="about" id="about">
-<h2 class="section-title">About Us</h2>
-<p>
-We specialize in premium curtain solutions for modern homes and offices, focusing on quality, design, and installation service.
-</p>
-</section>
-
-<section class="founder">
-
-<h2 class="section-title">Founder</h2>
-
-<div class="founder-grid">
-
-<div class="founder-cards">
-
-<div class="founder-card">
-<i class="fa-solid fa-user"></i>
-<div>
-<h4>Founder 1</h4>
-<p>Put description here</p>
-</div>
-</div>
-
-<div class="founder-card">
-<i class="fa-solid fa-user"></i>
-<div>
-<h4>Founder 2</h4>
-<p>Put description here</p>
-</div>
-</div>
-
-</div>
-
-<div class="founder-text">
-<h3>Our Vision</h3>
-<p>
-Put your company vision, story, and background here.
-</p>
 </div>
 
 </div>
@@ -453,10 +341,15 @@ Put your company vision, story, and background here.
 
 </section>
 
-<a class="whatsapp" href="https://wa.me/60123456789">WhatsApp</a>
+<!-- ONLY FLOATING WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/60133344330" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+WhatsApp
+</a>
 
 <script>
 let index = 0;
+
 function move(dir){
 const slider = document.getElementById('slider');
 const total = slider.children.length;
