@@ -76,7 +76,7 @@ nav a:hover{
 
 .hero{
     height:90vh;
-    background:url('https://i.postimg.cc/Hkv0Db5Q/IMG-20260517-WA0027.jpg=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+    background:url('https://i.postimg.cc/Hkv0Db5Q/IMG-20260517-WA0027.jpg') center/cover no-repeat;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -209,56 +209,59 @@ nav a:hover{
     line-height:1.8;
 }
 
-/* REVIEWS SECTION */
+/* INSTALLATIONS */
 
-.reviews-section{
+.installations{
     padding:80px 8%;
     background:#f8fafc;
 }
 
-.review-wrapper{
-    max-width:700px;
+.install-wrapper{
+    max-width:750px;
     margin:auto;
     overflow:hidden;
 }
 
-.review-slider{
+.install-slider{
     display:flex;
     transition:transform 0.5s ease;
 }
 
-.review{
+.install-card{
     min-width:100%;
     background:white;
-    padding:40px;
     border-radius:25px;
-    text-align:center;
+    overflow:hidden;
     box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
-.review img{
-    width:80px;
-    height:80px;
-    border-radius:50%;
-    margin-bottom:20px;
+.install-card img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
 }
 
-.review h4{
-    color:#1e293b;
-    margin-bottom:10px;
+.install-content{
+    padding:30px;
+    text-align:center;
 }
 
-.review p{
-    color:#555;
+.install-content h4{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.install-content p{
     line-height:1.8;
+    color:#555;
 }
 
-.review-buttons{
+.install-buttons{
     text-align:center;
     margin-top:25px;
 }
 
-.review-buttons button{
+.install-buttons button{
     border:none;
     background:#b68d40;
     color:white;
@@ -292,7 +295,7 @@ footer{
     padding:30px;
 }
 
-/* MOBILE FIX */
+/* MOBILE */
 
 @media(max-width:768px){
 
@@ -337,8 +340,8 @@ footer{
         padding:28px;
     }
 
-    .review{
-        padding:30px 20px;
+    .install-card img{
+        height:300px;
     }
 
     .whatsapp{
@@ -365,8 +368,8 @@ footer{
 <nav>
     <a href="#services">Services</a>
     <a href="#location">Location</a>
-    <a href="#contact">Contact Us</a>
-    <a href="#reviews">Reviews</a>
+    <a href="#prescription">Consultation</a>
+    <a href="#installations">Installations</a>
 </nav>
 
 </header>
@@ -390,17 +393,17 @@ comfort and modern interiors.
 
 <section class="showcase" id="showcase">
 
-<h2 class="section-title">Curtain Showcase</h2>
+<h2 class="section-title">Curtains Showcase</h2>
 
 <div class="gallery">
 
-<img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a">
+<img src="https://i.postimg.cc/KkJhVfv6/IMG-20260517-WA0028.jpg">
 
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<img src="https://i.postimg.cc/2b2NJGS5/IMG-20260517-WA0033.jpg">
 
-<img src="https://images.unsplash.com/photo-1494526585095-c41746248156">
+<img src="https://i.postimg.cc/3dQFVTzT/IMG-20260517-WA0030.jpg">
 
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<img src="https://i.postimg.cc/F7XV84wb/IMG-20260517-WA0035.jpg">
 
 </div>
 
@@ -425,6 +428,7 @@ luxury, comfort and privacy while enhancing modern interior aesthetics, along wi
 <div class="cards">
 
 <div class="card" id="services">
+
 <i class="fa-solid fa-couch"></i>
 
 <h4>Services</h4>
@@ -436,9 +440,11 @@ measurements and premium fabric selections<br>
 Installing curtain rails and rods<br>
 Sewing home and office curtains
 </p>
+
 </div>
 
 <div class="card" id="location">
+
 <i class="fa-solid fa-location-dot"></i>
 
 <h4>Our Location</h4>
@@ -447,60 +453,91 @@ Sewing home and office curtains
 Peninsular Malaysia<br><br>
 We are available in Perak, Selangor, Kuala Lumpur, Pahang, Negeri Sembilan, Melaka and Johor.
 </p>
+
 </div>
 
-<div class="card" id="contact">
-<i class="fa-solid fa-phone"></i>
+<div class="card" id="prescription">
 
-<h4>Contact Us</h4>
+<i class="fa-solid fa-ruler-combined"></i>
+
+<h4>Consultation & Measurements</h4>
 
 <p>
-Phone: +60133344330/+60143344255<br>
-Email: subabahcurtain@gmail.com<br>
-Facebook: Subabah Curtain
+Free consultation for curtain selections<br>
+Window measurements and recommendations<br>
+Custom sizing based on customer preferences<br>
+Professional setup planning and installation guidance
 </p>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- REVIEWS SECTION -->
+<!-- INSTALLATIONS -->
 
-<section class="reviews-section" id="reviews">
+<section class="installations" id="installations">
 
-<h2 class="section-title">Customer Reviews</h2>
+<h2 class="section-title">Our Installations</h2>
 
-<div class="review-wrapper">
+<div class="install-wrapper">
 
-<div class="review-slider" id="slider">
+<div class="install-slider" id="slider">
 
-<div class="review">
+<div class="install-card">
+
+<img src="https://i.postimg.cc/Hkv0Db5Q/IMG-20260517-WA0027.jpg">
+
+<div class="install-content">
+
+<h4>Living Room Installation</h4>
+
 <p>
-“Kualiti langsir sgt memuaskan nmpak cntik je wktu raya.”
+Modern premium curtains installed for a family home in Kuala Lumpur.
 </p>
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+
 </div>
 
-<div class="review">
+</div>
+
+<div class="install-card">
+
+<img src="https://i.postimg.cc/KkJhVfv6/IMG-20260517-WA0028.jpg">
+
+<div class="install-content">
+
+<h4>Office Curtain Setup</h4>
+
 <p>
-“Beautiful curtains and excellent customer service.”
+Elegant office curtain setup with professional measurements and installation.
 </p>
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+
 </div>
 
-<div class="review">
+</div>
+
+<div class="install-card">
+
+<img src="https://i.postimg.cc/F7XV84wb/IMG-20260517-WA0035.jpg">
+
+<div class="install-content">
+
+<h4>Bedroom Curtain Installation</h4>
+
 <p>
-“Langsir dia semua material rsa premium, Pemasangan pon okay laju. ”
+Soft luxury curtain installation designed for privacy and comfort.
 </p>
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
-</div>
 
 </div>
 
 </div>
 
-<div class="review-buttons">
+</div>
+
+</div>
+
+<div class="install-buttons">
 <button onclick="move(-1)">Prev</button>
 <button onclick="move(1)">Next</button>
 </div>
