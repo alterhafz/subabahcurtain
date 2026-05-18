@@ -6,7 +6,6 @@
 <title>Alwalid Trade</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
@@ -40,22 +39,10 @@ header{
     z-index:1000;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
-
-.logo img{
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    object-fit:cover;
-}
-
-.logo h1{
+header h1{
     font-size:28px;
     color:#1e293b;
+    letter-spacing:1px;
 }
 
 nav{
@@ -67,12 +54,13 @@ nav a{
     text-decoration:none;
     color:#333;
     font-weight:600;
-    transition:0.3s;
 }
 
 nav a:hover{
     color:#b68d40;
 }
+
+/* HERO */
 
 .hero{
     height:90vh;
@@ -103,7 +91,6 @@ nav a:hover{
 .hero-content h2{
     font-size:60px;
     margin-bottom:20px;
-    line-height:1.2;
 }
 
 .hero-content p{
@@ -119,14 +106,10 @@ nav a:hover{
     color:white;
     text-decoration:none;
     border-radius:50px;
-    font-size:18px;
     font-weight:bold;
-    transition:0.3s;
 }
 
-.hero-btn:hover{
-    background:#8f6d30;
-}
+/* SHOWCASE */
 
 .showcase{
     padding:80px 8%;
@@ -137,7 +120,6 @@ nav a:hover{
     text-align:center;
     font-size:42px;
     margin-bottom:50px;
-    color:#1e293b;
 }
 
 .gallery{
@@ -151,12 +133,9 @@ nav a:hover{
     height:320px;
     object-fit:cover;
     border-radius:20px;
-    transition:0.3s;
 }
 
-.gallery img:hover{
-    transform:scale(1.03);
-}
+/* INTRO */
 
 .intro{
     padding:80px 10%;
@@ -164,17 +143,13 @@ nav a:hover{
     background:#f8fafc;
 }
 
-.intro h3{
-    font-size:40px;
-    margin-bottom:20px;
-}
-
 .intro p{
     max-width:900px;
     margin:auto;
     line-height:1.9;
-    font-size:18px;
 }
+
+/* CARDS */
 
 .categories{
     padding:80px 8%;
@@ -195,18 +170,13 @@ nav a:hover{
 }
 
 .card i{
-    font-size:45px;
+    font-size:40px;
     color:#b68d40;
     margin-bottom:20px;
 }
 
 .card h4{
     margin-bottom:15px;
-    font-size:26px;
-}
-
-.card p{
-    line-height:1.8;
 }
 
 /* INSTALLATIONS */
@@ -232,7 +202,6 @@ nav a:hover{
     background:white;
     border-radius:25px;
     overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
 .install-card img{
@@ -246,31 +215,7 @@ nav a:hover{
     text-align:center;
 }
 
-.install-content h4{
-    font-size:28px;
-    margin-bottom:15px;
-}
-
-.install-content p{
-    line-height:1.8;
-    color:#555;
-}
-
-.install-buttons{
-    text-align:center;
-    margin-top:25px;
-}
-
-.install-buttons button{
-    border:none;
-    background:#b68d40;
-    color:white;
-    padding:12px 20px;
-    margin:5px;
-    border-radius:12px;
-    cursor:pointer;
-    font-weight:600;
-}
+/* WHATSAPP */
 
 .whatsapp{
     position:fixed;
@@ -281,75 +226,31 @@ nav a:hover{
     padding:18px 24px;
     border-radius:50px;
     text-decoration:none;
-    display:flex;
-    align-items:center;
-    gap:10px;
     font-weight:bold;
-    box-shadow:0 5px 20px rgba(0,0,0,0.2);
-}
-
-footer{
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:30px;
 }
 
 /* MOBILE */
 
 @media(max-width:768px){
 
-    header{
-        flex-direction:column;
-        gap:18px;
-        text-align:center;
-    }
+header{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
 
-    nav{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
 
-    .logo h1{
-        font-size:24px;
-    }
+.hero-content h2{
+    font-size:38px;
+}
 
-    .hero{
-        height:80vh;
-        padding:0 20px;
-    }
-
-    .hero-content h2{
-        font-size:38px;
-    }
-
-    .hero-content p{
-        font-size:17px;
-    }
-
-    .section-title{
-        font-size:32px;
-    }
-
-    .intro h3{
-        font-size:32px;
-    }
-
-    .card{
-        padding:28px;
-    }
-
-    .install-card img{
-        height:300px;
-    }
-
-    .whatsapp{
-        bottom:18px;
-        right:18px;
-        padding:14px 18px;
-        font-size:14px;
-    }
+.install-card img{
+    height:300px;
+}
 
 }
 
@@ -359,34 +260,23 @@ footer{
 <body>
 
 <header>
-
-<div class="logo">
-    <img src="https://via.placeholder.com/100">
     <h1>Alwalid Trade</h1>
-</div>
 
-<nav>
-    <a href="#services">Services</a>
-    <a href="#location">Location</a>
-    <a href="#prescription">Consultation</a>
-    <a href="#installations">Installations</a>
-</nav>
-
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#prescription">Consultation</a>
+        <a href="#installations">Installations</a>
+    </nav>
 </header>
 
 <section class="hero">
 
 <div class="hero-content">
-
 <h2>Elegant Curtains For Modern Living</h2>
-
-<p>
-Discover premium curtain designs crafted for luxury,
-comfort and modern interiors.
-</p>
-
-<a href="#showcase" class="hero-btn">View Collection</a>
-
+<p>Discover premium curtain designs crafted for luxury, comfort and modern interiors.</p>
+<a class="hero-btn" href="#showcase">View Collection</a>
 </div>
 
 </section>
@@ -396,15 +286,10 @@ comfort and modern interiors.
 <h2 class="section-title">Curtains Showcase</h2>
 
 <div class="gallery">
-
 <img src="https://i.postimg.cc/KkJhVfv6/IMG-20260517-WA0028.jpg">
-
 <img src="https://i.postimg.cc/2b2NJGS5/IMG-20260517-WA0033.jpg">
-
 <img src="https://i.postimg.cc/3dQFVTzT/IMG-20260517-WA0030.jpg">
-
 <img src="https://i.postimg.cc/F7XV84wb/IMG-20260517-WA0035.jpg">
-
 </div>
 
 </section>
@@ -412,11 +297,8 @@ comfort and modern interiors.
 <section class="intro">
 
 <h3>About Our Curtains</h3>
-
 <p>
-At Alwalid Trade, we specialize in elegant and premium curtain solutions for homes,
-commercial spaces, hotels and offices. Our collections are designed to provide
-luxury, comfort and privacy while enhancing modern interior aesthetics, along with free consultation and measurements.
+At Alwalid Trade, we specialize in elegant and premium curtain solutions for homes, commercial spaces, hotels and offices.
 </p>
 
 </section>
@@ -428,54 +310,37 @@ luxury, comfort and privacy while enhancing modern interior aesthetics, along wi
 <div class="cards">
 
 <div class="card" id="services">
-
 <i class="fa-solid fa-couch"></i>
-
 <h4>Services</h4>
-
-<p>
-Accepting orders for various types of curtains<br>
-Custom free consultation,
-measurements and premium fabric selections<br>
-Installing curtain rails and rods<br>
-Sewing home and office curtains
-</p>
-
+<p>Custom curtains, sewing, installation, consultation.</p>
 </div>
 
 <div class="card" id="location">
-
 <i class="fa-solid fa-location-dot"></i>
+<h4>Location</h4>
+<p>Peninsular Malaysia (KL, Selangor, Johor, etc.)</p>
+</div>
 
-<h4>Our Location</h4>
-
+<div class="card" id="contact">
+<i class="fa-solid fa-phone"></i>
+<h4>Contact Us</h4>
 <p>
-Peninsular Malaysia<br><br>
-We are available in Perak, Selangor, Kuala Lumpur, Pahang, Negeri Sembilan, Melaka and Johor.
+Phone: +60133344330<br>
+Email: subabahcurtain@gmail.com
 </p>
-
 </div>
 
 <div class="card" id="prescription">
-
 <i class="fa-solid fa-ruler-combined"></i>
-
-<h4>Consultation & Measurements</h4>
-
+<h4>Consultation</h4>
 <p>
-Free consultation for curtain selections<br>
-Window measurements and recommendations<br>
-Custom sizing based on customer preferences<br>
-Professional setup planning and installation guidance
+Free measurement, curtain planning & setup guidance.
 </p>
-
 </div>
 
 </div>
 
 </section>
-
-<!-- INSTALLATIONS -->
 
 <section class="installations" id="installations">
 
@@ -486,58 +351,34 @@ Professional setup planning and installation guidance
 <div class="install-slider" id="slider">
 
 <div class="install-card">
-
 <img src="https://i.postimg.cc/Hkv0Db5Q/IMG-20260517-WA0027.jpg">
-
 <div class="install-content">
-
 <h4>Living Room Installation</h4>
-
-<p>
-Modern premium curtains installed for a family home in Kuala Lumpur.
-</p>
-
+<p>Premium modern setup.</p>
 </div>
-
 </div>
 
 <div class="install-card">
-
 <img src="https://i.postimg.cc/KkJhVfv6/IMG-20260517-WA0028.jpg">
-
 <div class="install-content">
-
-<h4>Office Curtain Setup</h4>
-
-<p>
-Elegant office curtain setup with professional measurements and installation.
-</p>
-
+<h4>Office Installation</h4>
+<p>Professional curtain fitting.</p>
 </div>
-
 </div>
 
 <div class="install-card">
-
 <img src="https://i.postimg.cc/F7XV84wb/IMG-20260517-WA0035.jpg">
-
 <div class="install-content">
-
-<h4>Bedroom Curtain Installation</h4>
-
-<p>
-Soft luxury curtain installation designed for privacy and comfort.
-</p>
-
+<h4>Bedroom Installation</h4>
+<p>Soft luxury interior style.</p>
+</div>
 </div>
 
 </div>
 
 </div>
 
-</div>
-
-<div class="install-buttons">
+<div style="text-align:center;margin-top:20px;">
 <button onclick="move(-1)">Prev</button>
 <button onclick="move(1)">Next</button>
 </div>
@@ -549,33 +390,22 @@ Soft luxury curtain installation designed for privacy and comfort.
 Contact Us
 </a>
 
-<footer>
-© 2026 Alwalid Trade — All Rights Reserved
+<footer style="text-align:center;padding:30px;background:#111827;color:white;">
+© 2026 Alwalid Trade
 </footer>
 
 <script>
-
 let index = 0;
-
 function move(dir){
-
 const slider = document.getElementById('slider');
 const total = slider.children.length;
 
 index += dir;
-
-if(index < 0){
-    index = total - 1;
-}
-
-if(index >= total){
-    index = 0;
-}
+if(index < 0) index = total - 1;
+if(index >= total) index = 0;
 
 slider.style.transform = `translateX(${-index * 100}%)`;
-
 }
-
 </script>
 
 </body>
