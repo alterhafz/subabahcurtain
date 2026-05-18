@@ -124,6 +124,20 @@ nav a:hover{
     border-radius:20px;
 }
 
+/* ABOUT US */
+.about{
+    padding:80px 10%;
+    background:#f8fafc;
+    text-align:center;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.9;
+}
+
 /* INFORMATION */
 .categories{
     padding:80px 8%;
@@ -147,42 +161,6 @@ nav a:hover{
     font-size:40px;
     color:#b68d40;
     margin-bottom:15px;
-}
-
-/* FOUNDER SECTION */
-.founder{
-    padding:80px 8%;
-    background:#f8fafc;
-}
-
-.founder-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:center;
-}
-
-.founder-card{
-    display:flex;
-    gap:15px;
-    align-items:center;
-    background:white;
-    padding:18px;
-    border-radius:16px;
-    margin-bottom:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-.founder-card i{
-    font-size:28px;
-    color:#b68d40;
-}
-
-.founder-text{
-    background:white;
-    padding:25px;
-    border-radius:18px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
 /* INSTALLATIONS */
@@ -275,10 +253,6 @@ nav{
     font-size:36px;
 }
 
-.founder-grid{
-    grid-template-columns:1fr;
-}
-
 }
 
 </style>
@@ -291,8 +265,8 @@ nav{
 
 <nav>
 <a href="#showcase">Showcase</a>
+<a href="#about">About Us</a>
 <a href="#info">Information</a>
-<a href="#founder">Founder</a>
 <a href="#installations">Installations</a>
 </nav>
 </header>
@@ -316,7 +290,16 @@ nav{
 </div>
 </section>
 
-<!-- INFORMATION (CONSULTATION RESTORED) -->
+<!-- ABOUT US (RESTORED) -->
+<section class="about" id="about">
+<h2 class="section-title">About Us</h2>
+
+<p>
+At Alwalid Trade, we specialize in elegant and premium curtain solutions for homes, commercial spaces, hotels and offices. Our goal is to deliver high quality craftsmanship, modern design, and reliable installation services that enhance every interior space.
+</p>
+</section>
+
+<!-- INFORMATION -->
 <section class="categories" id="info">
 
 <h2 class="section-title">Information</h2>
@@ -345,42 +328,6 @@ nav{
 <i class="fa-solid fa-ruler-combined"></i>
 <h4>Consultation</h4>
 <p>Free measurement, design advice & planning.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- FOUNDER + VISION -->
-<section class="founder" id="founder">
-
-<h2 class="section-title">Founder</h2>
-
-<div class="founder-grid">
-
-<div>
-<div class="founder-card">
-<i class="fa-solid fa-user"></i>
-<div>
-<h4>Founder 1</h4>
-<p>Put description here</p>
-</div>
-</div>
-
-<div class="founder-card">
-<i class="fa-solid fa-user"></i>
-<div>
-<h4>Founder 2</h4>
-<p>Put description here</p>
-</div>
-</div>
-</div>
-
-<div class="founder-text">
-<h3>Vision</h3>
-<p>
-Put your company vision, mission and long-term goals here.
-</p>
 </div>
 
 </div>
@@ -426,7 +373,7 @@ Put your company vision, mission and long-term goals here.
 
 </section>
 
-<!-- WHATSAPP ONLY -->
+<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/60133344330" target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
 WhatsApp
@@ -434,6 +381,7 @@ WhatsApp
 
 <script>
 let index = 0;
+
 function move(dir){
 const slider = document.getElementById('slider');
 const total = slider.children.length;
